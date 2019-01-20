@@ -52,7 +52,7 @@ float quadraticEquation(float a, float b, float c) {
 void seasonByMonth() {
     int month;
     scanf("%d", &month);
-    if ((month == 12) && (month == 12) && (month == 12)) {
+    if ((month == 12) || (month == 1) || (month == 2)) {
         printf("Winter\n");
     } else if ((month >= 3) && (month <= 5)) {
         printf("Spring\n");
@@ -107,7 +107,7 @@ int quotientAndRemainder(int n, int k) {
 }
 
 //8. Дано целое число N (> 0). С помощью операций деления нацело и взятия остатка от деления определить, имеются ли в записи числа N нечетные цифры. Если имеются, то вывести True, если нет — вывести False.
-int oddNunbers(int n) {
+int oddNumbers(int n) {
     while (n > 0) {
         if (n % 2 == 1) {
             printf("True\n");
@@ -165,7 +165,7 @@ int main(int argc, const char** argv) {
     yearDeclension();
     cageColorCompare(5, 4, 3, 5);
     quotientAndRemainder(15, 4);
-    oddNunbers(4382);
+    oddNumbers(4382);
     automorphicNumber(10023450);
     average();
     return 0;
