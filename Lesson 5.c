@@ -102,6 +102,7 @@ void copyStack(Stack *x, Stack *y) {
     while (z.size > 0) {
         temp = popStack(&z);
         pushStack(y, temp);
+        pushStack(x, temp);
     }
 }
 
@@ -181,6 +182,10 @@ int main(int argc, const char** argv) {
     printf("Stack copy: ");
     while (y1.size > 0)
         printf("%c ", popStack(&y1));
+    printf("\n");
+    printf("Stack original: ");
+    while (x1.size > 0)
+        printf("%c ", popStack(&x1));
     printf("\n");
 //4.
     Queue qu;
