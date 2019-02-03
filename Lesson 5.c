@@ -27,7 +27,6 @@ int pushStack(Stack *st, T value) {
     return 1;
 }
 
-
 T popStack(Stack *st) {
     if (st->size == 0)
         return -1;
